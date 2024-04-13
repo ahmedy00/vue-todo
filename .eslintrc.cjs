@@ -13,6 +13,8 @@ module.exports = {
   },
   rules: {
     'quotes': ['error', 'single'],
-    'semi': ['error', 'never']
+    'semi': ['error', 'never'],
+    'vue/multi-word-component-names': 'off',
+    'object-curly-spacing': ['error', 'always']
   }
 }
