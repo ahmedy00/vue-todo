@@ -37,6 +37,15 @@ export const useTodoStore = defineStore('todo', {
             })
         },
 
+        reopenItem (id: string): void {
+            this.todos.find((item: Item) => {
+                if (item.id === id) {
+                    item.status = 'pending'
+                }
+            })
+
+        },
+
         removeItem (id: string): void {
             this.todos = this.todos.filter(item => item.id !== id)
         },

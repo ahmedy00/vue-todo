@@ -37,6 +37,10 @@ const removeItem = (id: string) => {
   store.removeItem(id)
 }
 
+const reopenItem = (id: string) => {
+  store.reopenItem(id)
+}
+
 const clearList = () => {
   store.clearList()
 }
@@ -73,6 +77,7 @@ const clearList = () => {
         @updateDesc="updateDesc"
         @markAsDone="markAsDone"
         @removeItem="removeItem"
+        @reopenItem="reopenItem"
       />
     </div>
     <div class="bg-primary text-white mt-8 mx-auto w-36 p-2 rounded">
